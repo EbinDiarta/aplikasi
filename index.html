@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #5b7fff, #33ccfc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .tabel {
+            background-color: rgba(255,255,255,0.3);
+        padding: 35px;
+        border: solid 1px white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 300px;
+        backdrop-filter: blur(15px);
+        }
+        .nama {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-family: serif;
+            color: #056b33;
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            font-family: monospace;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .tombol {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 5px;
+        }
+        .btn {
+            font-family: cursive;
+            width: 100%;
+            padding: 5px;
+            color: wheat;
+            background-color: #07ad52;
+            border: 1px solid ;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #218838;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="tabel">
+        <div class="nama">
+        <h1>Selamat Datang Boss</h1>
+        <p>
+            Apa yang ingin anda lakukan boss? </br> Penjadwalan tugas apa mengelola keuangan? </br>
+            Untuk mengelola keuangan klik tombol keuangan, dan jika anda ingin mencatatkan tugas anda klik tombol tugas
+        </p>
+        </div>
+        <div class="tombol">
+            <button class="btn" onclick="tugas()">Tugas</button>
+            <button class="btn" onclick="uang()">Keuangan</button>
+        </div>
+        <h3>Tentang Aplikasi</h3>
+        <p>Aplikasi ini dibuat oleh </br> <strong>Ebin Diarta Pratama</strong> </br>
+        Untuk mencatatkan tugas dan mengelola keuangan dengan mudah </p>
+    </div>
+</body>
+<script>
+    function tugas() {
+        window.location.href = "list.html";
+    }
+    function uang() {
+        window.location.href = "keuangan.html";
+    }
+</script>
+</html>
